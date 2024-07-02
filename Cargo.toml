@@ -22,8 +22,8 @@ branch = "aleo/testnet-beta"
 version = "0.1"
 
 [dependencies.snarkvm]
-git = "https://github.com/AleoNet/snarkVM.git"
-rev = "d170a9f"
+git = "https://github.com/gh-efforts/snarkVM.git"
+branch = "mainnet-staging"
 features = [ "console" ]
 
 [dependencies.anyhow]
@@ -90,8 +90,9 @@ cuda = ["snarkvm/cuda"]
 
 [profile.release]
 opt-level = 3
-lto = "thin"
+lto = true
 incremental = true
+codegen-units = 1
 
 [profile.bench]
 opt-level = 3
