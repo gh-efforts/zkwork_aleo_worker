@@ -88,6 +88,9 @@ version = "7"
 [features]
 cuda = ["snarkvm/cuda"]
 
+[patch.crates-io]
+snarkvm = {git ="https://github.com/gh-efforts/snarkVM.git", branch = "mainnet-staging"}
+
 [profile.release]
 opt-level = 3
 lto = true
