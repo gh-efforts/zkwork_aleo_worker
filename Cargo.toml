@@ -88,7 +88,7 @@ version = "7"
 [features]
 cuda = ["snarkvm/cuda"]
 
-[patch.crates-io]
+[patch."https://github.com/AleoNet/snarkVM.git"]
 snarkvm = {git ="https://github.com/gh-efforts/snarkVM.git", branch = "mainnet-staging"}
 
 [profile.release]
